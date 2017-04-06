@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9800"
+    android:orientation="vertical"
+    tools:context="com.example.android.friendsquiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:text="@string/Welcome"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:text="@string/sub_welcome"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/mainScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/logo" />
+
+            <EditText
+                android:id="@+id/your_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="24dp"
+                android:hint="Enter your name"
+                android:inputType="textCapWords"
+                android:imeOptions="actionDone"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/Question1"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/RadioOne"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_mandy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mandy" />
+
+                <RadioButton
+                    android:id="@+id/radio_muriel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Muriel" />
+
+                <RadioButton
+                    android:id="@+id/radio_mindy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mindy" />
+
+                <RadioButton
+                    android:id="@+id/radio_mona"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mona" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/Question2"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/RadioTwo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_keyboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Keyboard" />
+
+                <RadioButton
+                    android:id="@+id/radio_sax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sax" />
+
+                <RadioButton
+                    android:id="@+id/radio_guitar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Guitar" />
+
+                <RadioButton
+                    android:id="@+id/radio_drums"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Drums" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/Question3"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/sister_jill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jill"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/sister_tamy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tamy"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/sister_judy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Judy"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/sister_amy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amy"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/sister_jane"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jane"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/sister_amanda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amanda"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/sister_felicity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Felicity"
+                android:textColor="#000000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/Question4"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/name_answer_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Name of Phoebe's brother?"
+                android:inputType="textCapWords"
+                android:imeOptions="actionDone"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/Question5"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/RadioThree"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_betsy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Betsy" />
+
+                <RadioButton
+                    android:id="@+id/radio_mugsy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mugsy" />
+
+                <RadioButton
+                    android:id="@+id/radio_hugsy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hugsy" />
+
+                <RadioButton
+                    android:id="@+id/radio_mitsy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mitsy" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/Question6"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/RadioFour"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_hockey_player"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hockey player" />
+
+                <RadioButton
+                    android:id="@+id/radio_ice_skater"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ice skater" />
+
+                <RadioButton
+                    android:id="@+id/radio_swimmer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Swimmer" />
+
+                <RadioButton
+                    android:id="@+id/radio_dancer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dancer" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/Question7"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/name_answer_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Mountain name?"
+                android:inputType="textCapWords"
+                android:imeOptions="actionDone"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/Question8"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/RadioFive"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_jack_jill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jack and Jill" />
+
+                <RadioButton
+                    android:id="@+id/radio_john_judy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="John and Judy" />
+
+                <RadioButton
+                    android:id="@+id/radio_jack_judy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jack and Judy" />
+
+                <RadioButton
+                    android:id="@+id/radio_james_julia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="James and Julia" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/Question9"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/name_answer_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="24dp"
+                android:hint="Name of Phoebe's boyfriend?"
+                android:inputType="textCapWords"
+                android:imeOptions="actionDone"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/Question10"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/sister_gina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gina"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/sister_tina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tina"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/sister_dina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dina"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/sister_mary_angela"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mary-Angela"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/sister_mary_therese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mary-Therese"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/sister_veronica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Veronica"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/sister_cookie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cookie"
+                android:textColor="#000000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:onClick="submitAnswers"
+                android:text="@string/Submit" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:onClick="resetAll"
+                android:text="@string/Reset" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

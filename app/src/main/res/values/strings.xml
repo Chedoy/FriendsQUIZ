@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Friends QUIZ</string>
+    <string name="Welcome">Are you a \"Friends\" fan?</string>
+    <string name="sub_welcome">Can you name the answers to the following Friends questions?</string>
+    <string name="Question1">What is the name of Rachel\'s ex maid of honor who married her ex fiance?</string>
+    <string name="Question2">Which instrument did ross play in high school?</string>
+    <string name="Question3">What are the names of Rachel\'s sisters?</string>
+    <string name="Question4">What is the name of Phoebe\'s brother?</string>
+    <string name="Question5">What is the name of Ross\'s dirty girlfriend hamster?</string>
+    <string name="Question6">What is the job of Phoebe\'s ex husband?</string>
+    <string name="Question7">What is the name of the mountain Joey uses in his hiking story?</string>
+    <string name="Question8">What are the names of Monica\'s and Ross\'s parents?</string>
+    <string name="Question9">What is the name of Phoebe\'s overly enthusiastic boyfriend?</string>
+    <string name="Question10">What are the names of Joey\'s sisters?</string>
+    <string name="Submit">Submit Answers!</string>
+    <string name="Reset">Reset</string>
+
+</resources>
